@@ -1,0 +1,173 @@
+
+:root {
+    --clr-purple: #433261;
+    --clr-background: #f6f9fe;
+    --clr-grey: #c8cacd;
+    --clr-dark-grey: #5a5a5a;
+    --clr-white: #fff;
+    --clr-placeholder-grey: #cacacb;
+
+    --ff-nunito-sans: 'Nunito Sans', sans-serif;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a, input {
+    color: inherit;
+}
+
+a:not(.learn-more) {
+    text-decoration: none;
+}
+
+/* General styling */
+
+body {
+    background-color: beige;
+}
+
+.btn {
+    background-color: var(--clr-purple);
+    color: var(--clr-white);
+    border-radius: 4px;
+    padding: .8rem 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .8;
+    transition: .5;
+}
+
+.waitlist {
+    font-family: var(--ff-nunito-sans);
+    padding: .5rem;
+    background-color: var(--clr-white);
+    border-radius: 8px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.waitlist-inner {
+    background-color: var(--clr-background);
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media(max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .illustration {
+        display: none;
+    }
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: var(--clr-dark-rey);
+}
+
+.main {
+    display: flex;
+    gap: 2rem;
+}
+
+.text > * + * {
+    margin-top: 2rem;
+}
+
+.early-access p {
+    display: inline;
+}
+
+.early-access {
+    display: inline-block;
+    background-color: var(--clr-purple);
+    color: var(--clr-grey);
+    padding: .4rem 1.4rem;
+    border-radius: 20px;
+}
+
+.learn-more:hover {
+    opacity: .8;
+}
+
+.main-heading {
+    color: var(--clr-purple);
+    font-weight: 800;
+    margin-bottom: .3rem;
+}
+
+.email {
+    padding: .8rem;
+    width: 60%;
+    margin-right: .5rem;
+}
+
+.footer {
+    padding: 3rem 0 4rem;
+}
+
+.companies {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
