@@ -85,31 +85,6 @@ body {
     margin: 0 auto;
 }
 
-@media(max-width: 800px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .menu {
-        flex-direction: column;
-    }
-
-    .main {
-        flex-direction: column;
-    }
-
-    .illustration {
-        display: none;
-    }
-}
-
 
 .header {
     display: flex;
@@ -156,10 +131,14 @@ body {
     margin-bottom: .3rem;
 }
 
+.email-list {
+    display: flex;
+    gap: 1.5rem;
+}
+
 .email {
     padding: .8rem;
     width: 60%;
-    margin-right: .5rem;
 }
 
 .footer {
@@ -170,4 +149,37 @@ body {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+}
+
+@media(max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    .email-list {
+        flex-direction: column;
+    }
+
+    .email {
+        width: 100%;
+    }
 }
